@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      enabled: true
+      server:
+        svn:
+          uri: http://wh-svn.fn.com/feiniu-website/configuration/beta
+          username: xuzhuo
+          password: 123123.com
+          default-label: ""
+  profiles:
+    active: subversion
+server:
+  port: 8766
